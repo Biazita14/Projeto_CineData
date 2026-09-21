@@ -6,7 +6,7 @@ Pipeline de Engenharia de Dados desenvolvido no **Databricks** utilizando a **Ar
 
 A imagem abaixo demonstra o sucesso na execução orquestrada das tarefas de ponta a ponta:
 
-![Comprovante de Execução do Pipeline](caminho/para/sua/imagem.png)
+![Comprovante de Execução do Pipeline](assets/job_realizados-Orquestração.png)
 
 ---
 
