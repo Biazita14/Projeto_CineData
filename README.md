@@ -38,7 +38,7 @@ Distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais det
 │   └── 04_Analytics_Challenge.ipynb
 │
 ├── 📁 assets/
-│   └── job_execution_success.png
+│   └── job_realizados-Orquestração.png
 │
 ├── job.yaml
 ├── LICENSE
