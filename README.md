@@ -10,7 +10,7 @@ Pipeline de Engenharia de Dados desenvolvido no **Databricks** utilizando a **Ar
 | `notebooks/01_Landing_to_Bronze.ipynb` | Ingestão dos dados brutos (*Landing*) para a camada de armazenamento persistente (*Bronze*). |
 | `notebooks/02_Bronze_to_Silver.ipynb` | Limpeza, tratamento de nulos, tipagem de dados e modelagem relacional na camada intermediária (*Silver*). |
 | `notebooks/03_Silver_to_Gold.ipynb` | Criação de agregações de negócio, tabelas fato/dimensão e tabelas consolidadas para consumo analítico (*Gold*). |
-| `notebooks/04_Analytics_Challenge.ipynb` | Consultas analíticas avançadas e validação das regras de negócio utilizando *Surrogate Keys*. |
+| `notebooks/04_Analytics_Challenge.ipynb` | Resolução das perguntas de negócio analíticas por meio de consultas SQL |
 | `job.yaml` | Arquivo de configuração de orquestração do Databricks Workflows automatizando a execução sequencial do pipeline. |
 
 ---
