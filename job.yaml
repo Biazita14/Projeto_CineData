@@ -1,0 +1,29 @@
+resources:
+  jobs:
+    Job_Cinedata_Pipeline_Medallion:
+      name: Job_Cinedata_Pipeline_Medallion
+      trigger:
+        pause_status: UNPAUSED
+        periodic:
+          interval: 1
+          unit: DAYS
+      tasks:
+        - task_key: to_Bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/engcomp.beatrizferraz@gmail.com/Projeto_CineData/01_Landing_to_Bronze
+            source: WORKSPACE
+        - task_key: to_Silver
+          depends_on:
+            - task_key: to_Bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/engcomp.beatrizferraz@gmail.com/Projeto_CineData/02_Bronze_to_Silver
+            source: WORKSPACE
+        - task_key: to_Gold
+          depends_on:
+            - task_key: to_Silver
+          notebook_task:
+            notebook_path: /Workspace/Users/engcomp.beatrizferraz@gmail.com/Projeto_CineData/03_Silver_to_Gold
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
